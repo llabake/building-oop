@@ -12,17 +12,17 @@ export class Building {
     }
     
     getBuiltDate () {
-        return `Building Completed on ${this._builtDate}.`;
+        return `Building Completed on ${this.builtDate}.`;
     }
 
 }
   
 export class ResidentialBuilding extends Building {
-    constructor(props){
-        super(props.location, props.value, props.width, props.height);
+    constructor(args){
+        super(args);
         this._type = 'residential';
-        this.noOfApartments = props.noOfApartments;
-        this.noOfOccupants = props.noOfOccupants;
+        this.noOfApartments = args.noOfApartments;
+        this.noOfOccupants = args.noOfOccupants;
     }
     get type() {
         return this._type;
@@ -33,7 +33,7 @@ export class CommercialBuilding extends Building {
     constructor(args){
         super(args);
         this._type = 'commercial';
-        this.noOfOffices = props.noOfOffices;
+        this.noOfOffices = args.noOfOffices;
     }
     get type() {
         return this._type;  
