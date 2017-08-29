@@ -1,0 +1,22 @@
+{
+  "name": "building-oop",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llabake/building-oop.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llabake/building-oop/issues"
+  },
+  "homepage": "https://github.com/llabake/building-oop#readme"
+}
