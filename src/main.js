@@ -3,12 +3,12 @@ export class Building {
       this.location = args.location;
       this.value = args.value;
       this.width = args.width;
-      this.height = args.height;
+      this.length = args.length;
       this.builtDate = args.builtDate;
   }
   
     getDimension() {
-      return `${this.height} X ${this.width}`;
+      return `${this.length} X ${this.width}`;
     }
     
     getBuiltDate () {
